@@ -7,6 +7,11 @@ export const getTags=el=>tag=>
 export const getText=el=>
 el.textContent
 
+export const tools=(userEvent,screen,jest)=>({
+text: (testid)=>
+getText(screen.getByTestId(testid))
+})
+
 export const type=(userEvent,screen)=>(testid,text)=>
 userEvent.type(screen.getByTestId(testid),text)
 
