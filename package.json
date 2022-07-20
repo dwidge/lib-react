@@ -17,6 +17,6 @@
     "eslint-plugin-react": "^7.30.0"
   },
   "scripts": {
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}"
+    "lint": "eslint . --fix"
   }
 }
